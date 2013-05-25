@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Capture" >
+
+    <ImageView
+        android:id="@+id/picView"
+        android:layout_width="240dp"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/picture" />
+
+    <Button
+        android:id="@+id/upload_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/picView"
+        android:layout_below="@+id/picView"
+        android:text="@string/upload" />
+
+    <Button
+        android:id="@+id/capture_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/upload_but"
+        android:layout_alignBottom="@+id/upload_but"
+        android:layout_alignLeft="@+id/picView"
+        android:text="@string/capture" />
+
+    <EditText
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/capture_but"
+        android:layout_below="@+id/capture_but"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/nothing" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
